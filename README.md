@@ -1,3 +1,3 @@
-# jav-algorithms
+# java-algorithms
 
 ## Algorithm practices for java
