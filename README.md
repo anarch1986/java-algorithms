@@ -1,1 +1,3 @@
-# java-alogirhm-examples
+# jav-algorithms
+
+## Algorithm practices for java
