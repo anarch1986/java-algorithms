@@ -11,7 +11,7 @@ public class AutoComplete {
      * Starts a new Trie with dummy root data "-"
      */
     public AutoComplete() {
-        root = new TrieDataNode('-');
+        root = new TrieDataNode('*');
     }
 
     /**
