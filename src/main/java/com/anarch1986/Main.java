@@ -1,5 +1,6 @@
 package com.anarch1986;
 
+import com.anarch1986.numbers.Fibonacci;
 import com.anarch1986.numbers.Sieve;
 import com.anarch1986.sorting.*;
 
@@ -14,6 +15,7 @@ public class Main {
         MergeSort mergeSort = new MergeSort();
         QuickSort quickSort = new QuickSort();
         Sieve sieve = new Sieve();
+        Fibonacci fibonacci = new Fibonacci();
 
         int[] intArray = new int[]{5,90,3,5,35,45,150,45,3};
 
@@ -124,5 +126,10 @@ public class Main {
         }
         System.out.println("Prime numbers until 100:");
         System.out.println(primeNumbers);
+
+        System.out.println("");
+        System.out.println("");
+        System.out.println("The first 15 fibonacci numbers:");
+        System.out.println(fibonacci.getFibonacciNumbers(16));
     }
 }
