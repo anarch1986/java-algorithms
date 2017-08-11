@@ -24,6 +24,8 @@ class AutoCompleteTest {
         for (String str : wordList) {
             ac.addWord(str);
         }
+        ac.addEnding(ac.root);
+
         List<String> results = ac.autoComplete("spectro");
         List<String> expected = Arrays.asList(new String[]{"spectrogram", "spectrograph", "spectrographic", "spectrographically",
                 "spectrometric", "spectrophotometer", "spectroscope", "spectroscopic", "spectroscopy"});

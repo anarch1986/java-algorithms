@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Iterator;
 import java.util.List;
 
 public class TrieMain {
@@ -12,7 +13,7 @@ public class TrieMain {
 
         Path worldListPath = new File
                 ("/home/tomi/gits/java-algorithms/src/" +
-                        "main/java/com/anarch1986/tire/smallwords.txt").toPath();
+                        "main/java/com/anarch1986/tire/wordlist.txt").toPath();
         List<String> wordList = Files.readAllLines(worldListPath);
 
         AutoComplete ac = new AutoComplete();
@@ -20,10 +21,10 @@ public class TrieMain {
             ac.addWord(word);
         }
 
+        ac.addEnding(ac.root);
+
         System.out.println(ac.autoComplete("spectro"));
         System.out.println("done");
-        System.out.println(ac.root);
-        System.out.println(ac.root.getChildren());
-        System.out.println(ac.root.getChildren().get(0).getChildren());
     }
-}
+
+    }
