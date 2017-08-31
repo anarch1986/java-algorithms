@@ -7,13 +7,13 @@ public class Fibonacci {
     public ArrayList<Integer> getFibonacciNumbers(int n) {
         ArrayList<Integer> results = new ArrayList<Integer>();
         for (int i = 1; i < n; i++) {
-            results.add(fibonacci(i));
+            results.add(calculate(i));
         }
 
         return results;
     }
 
-    public static int fibonacci(int number) {
+    public static int calculate(int number) {
         if (number == 1 || number == 2) {
             return 1;
         }

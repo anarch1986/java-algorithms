@@ -1,5 +1,6 @@
 package com.anarch1986;
 
+import com.anarch1986.checks.Palindrome;
 import com.anarch1986.numbers.Fibonacci;
 import com.anarch1986.numbers.Sieve;
 import com.anarch1986.sorting.*;
@@ -131,5 +132,10 @@ public class Main {
         System.out.println("");
         System.out.println("The first 15 fibonacci numbers:");
         System.out.println(fibonacci.getFibonacciNumbers(16));
+
+        System.out.println("");
+        System.out.println("");
+        System.out.println(Palindrome.checkIfPalindrome("ABBA"));
+        System.out.println(Palindrome.checkIfPalindrome("ABOBA"));
     }
 }
